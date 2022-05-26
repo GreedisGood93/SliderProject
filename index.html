@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="slider">
+        <button class="button prev">Prev</button>
+        <div class="slider-container">
+            <img src="https://s0.rbk.ru/v6_top_pics/media/img/3/73/756461484866733.jpg" alt="">
+            <img src="https://www.ixbt.com/img/n1/news/2020/7/4/Tesla-wrap-hero_large.jpg" alt="" class="big-picture">
+            <img src="https://quto.ru/thumb/1200x0/filters:quality(75):no_upscale()/imgs/2021/07/22/05/4780394/d0a01f43d176117ee2e83bac2caa3dbfe3f47123.jpg" alt="">
+            <img src="https://www.ixbt.com/img/n1/news/2021/10/6/084ed9e98d6d6c45ac49b1474002d2f0_large.jpg" alt="">
+            <img src="https://admin.idaoffice.org/wp-content/uploads/2018/06/%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F-16-1024x550.jpg" alt="">
+            <img src="https://static.mk.ru/upload/objects/articles/detailPicture/f0/ce/0b/a9/4904366_5421264.jpg" alt="">
+        </div>        
+        <button class="button next">Next</button>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .slider {
+            height: 250px;
+            position: relative;
+            border: 1px solid black;
+            overflow: hidden;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .slider img {
+            width: 400px;
+            position: absolute;
+            transition: left 0.5s;
+            height: 100%;
+        }
+        .button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 999;           
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+        .big-picture {
+            width: 700px
+        }
+    </style>
+    <script src="./index.js"></script>
+</body>
+</html>
